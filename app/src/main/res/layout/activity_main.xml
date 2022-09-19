@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/celular" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Aprenda sobre edição de imagens"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="10/05/2030"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet scelerisque facilisis. Phasellus posuere, nibh non convallis mollis, quam arcu iaculis nisl, eu egestas enim eros ut felis. Praesent consectetur eget ipsum et placerat. Nullam eget metus sed lacus blandit volutpat. Pellentesque dui risus, suscipit in feugiat eget, varius quis lacus. Aliquam consequat orci mi, ut mollis nunc tempus in. Curabitur vitae lacus sagittis, placerat risus id, interdum tellus. Ut rhoncus ullamcorper risus, a placerat quam luctus id. Morbi quis urna quis felis consequat vulputate sit amet at orci. Integer ornare massa a tortor tempus, aliquam feugiat justo auctor. Etiam ornare dignissim tortor, non varius enim semper quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc tempus, augue nec malesuada feugiat, velit diam blandit orci, quis pulvinar turpis ex in enim. Ut sodales nibh felis.  Aenean bibendum nibh felis, eget consectetur nulla posuere in. Curabitur condimentum sapien eu eros eleifend bibendum. Pellentesque consectetur risus odio, vel venenatis elit accumsan feugiat. Nam sagittis pharetra lacus non gravida. Praesent iaculis maximus est non egestas. Vivamus luctus eros sed ipsum gravida, maximus finibus sem malesuada. Pellentesque vitae sapien libero. Nunc gravida non libero facilisis dapibus. Praesent at nulla eu tortor pellentesque cursus vitae eget tellus. Donec sit amet tincidunt elit, vitae blandit lacus. Pellentesque blandit, nunc molestie ullamcorper iaculis, magna orci cursus quam, vel aliquam justo leo eu lorem. Nam auctor tortor in augue sollicitudin elementum. Proin arcu purus, tristique in est dapibus, suscipit semper nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.  In suscipit ut leo tristique vestibulum. Integer laoreet dapibus metus et congue. Sed tincidunt posuere suscipit. Morbi id egestas leo. Phasellus id tincidunt sem, eget consequat odio. Ut lobortis, magna a imperdiet interdum, erat risus laoreet ante, ullamcorper faucibus diam tellus at tellus. Maecenas aliquam mauris non purus tristique, eget consequat ipsum tempor. Praesent nec odio dictum, posuere leo eu, volutpat tellus. Suspendisse eleifend eleifend nulla. Curabitur scelerisque rutrum tristique."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="PRÓXIMO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="ANTERIOR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Pedro Freitas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
